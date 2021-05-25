@@ -1,0 +1,878 @@
+/*borra los margenes de toda la pagina*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  
+}
+
+
+header
+{
+  outline: 1px solid white;
+  position: center;
+}
+
+/*centro el logotipo en la parte superior*/
+.contenedor-logo {
+	
+	text-align:center;
+  object-fit: cover;
+  
+  
+}
+
+
+nav {
+width:150%;
+display:flex;
+align-items: center;
+justify-content: center;
+background: rgb(255, 255, 255);
+}
+nav a {
+font-size: 14px;
+  outline: none;
+  text-decoration: none;
+  text-transform: none;
+  font-family: 'Roboto Condensed';
+  transition: all .3s ease;
+}
+nav a:hover {
+  color: white !important; 
+}
+
+nav .menu
+{
+float: none;
+display: inline-block;
+padding-right: 75px;
+padding-top: 5px;
+}
+
+ul .wrapper
+{
+  outline: 1px solid white;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li
+{
+  outline: 1px solid #fff;
+  list-style: none;
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+  background: #06265e;
+  line-height: 40px
+  }
+.menu li a
+{
+  outline: 1px solid black;
+  text-emphasis-style: bold;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto Condensed'; 
+  font-size: 17px;
+  color: #fff;
+  display: block;
+}
+li a:hover
+{
+background: #ff914d;
+color: white;
+}
+
+/*********************************************************************************/
+/* Form Style                                                                    */
+/*********************************************************************************/
+
+
+
+/*********************************************************************************/
+/* Parrafo                                                                   */
+/*********************************************************************************/
+
+header .segundo
+{
+  outline: 1px solid white;
+}
+
+.section-intro {
+
+font-family: 'Roboto Condensed';
+font-size: 15px;
+text-align:center;
+padding-top: 5px;
+padding-bottom: 25px;
+
+}
+
+
+/*********************************************************************************/
+/* Carrusel                                                                  */
+/*********************************************************************************/
+
+.container-slider{
+
+
+width: 100%;
+max-width:1000px;
+margin:auto;
+overflow: hidden;
+box-shadow: 0 0 0 0px #fff,
+            0 0px 0px;
+position: relative;
+
+}
+
+/*cantidad de imagenes se incremente en 100% si se agrega una, cada vez que
+se agrge una imagen se debe incrementar el width en 100% + ejemplo si son 6 600% sin son 8 800%*/
+.slider {
+display: flex;
+width: 600%;
+height: 300px;
+margin-left: -100%;
+}
+
+.slider-section {
+
+  width: 100%;
+
+}
+
+.slider__img{
+
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.slider__btn{
+
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  background: rgba(255 255 255 0.7);
+  transform: translateY(-50);
+  font-size: 40px;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+
+  
+}
+
+.slider__bln:hover{
+
+  background-color: #fff;
+
+
+
+}
+
+.slider__btn--right{
+
+right: 0px;
+
+}
+
+.slider__btn--left{
+
+left: 0px;
+
+}
+
+/***********************************************/
+/* seccion de titulo */
+/***********************************************/
+
+.titulo {
+
+font-weight:bold;
+font-family: 'Roboto Condensed';
+font-size: 15px;
+text-align:center;
+text-align: center;
+  
+  
+  }
+
+
+/***********************************************/
+/* tarjetas */
+/***********************************************/
+
+.container{
+  width: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container .card{
+  position: relative;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: none;
+  
+}
+
+.container .card .face{
+  width: 350px;
+  height: 250px;
+  transition: 0.5s;
+  display: flex;
+}
+
+.container .card .face.face1{
+  position: relative;
+  background: #06265e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
+  
+}
+
+.container .card:hover .face.face1{
+  background: #ff914d;
+  transform: translateY(0);
+  
+}
+
+.container .card .face.face1 .content{
+  opacity: 0.9;
+  transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+  opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+  max-width: 100%;
+  object-fit: cover;
+  
+}
+
+.container .card .face.face1 .content h3{
+  
+  padding: 0;
+  color: white;
+  text-align: center;
+  text-justify: auto;
+  font-size: 20px;
+  border: none;
+}
+
+.container .card .face.face2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transform: translateY(-100px);
+  box-sizing: border-box;
+  
+  
+}
+
+.container .card:hover .face.face2{
+  transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  text-decoration-style: wavy;
+  font-family: 'Roboto Condensed';
+}
+
+.container .card .face.face2 .content a{
+  margin: 15px 0 0;
+  display:  inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  font-family: Roboto;
+  padding: 12px;
+  text-align: center;
+  border: none;
+  
+}
+
+.container .card .face.face2 .content a:hover{
+  background: #ff914d;
+  color: white;
+}
+
+
+/**************FOOTER ******************/
+
+/* The footer is fixed to the bottom of the page */
+
+/* The footer is fixed to the bottom of the page */
+
+footer{
+	position: fixed;
+	bottom: 0;
+}
+
+@media (max-height:800px){
+	footer { position: static; }
+	header { padding-top:40px; }
+}
+
+
+.footer-distributed{
+	background-color: #ff914d;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+	padding: 50px 50px 60px 50px;
+	margin-top: 80px;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+	width: 30%;
+}
+
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Roboto', cursive;
+	margin: 0;
+}
+
+/* The company logo */
+
+.footer-distributed .footer-left img{
+	width: 35%;
+}
+
+.footer-distributed h3 span{
+	color:  #06265e;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links :hover{
+	color:  yellow;
+	margin: 20px 0 12px;
+  color: white;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #06265e;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+	width: 35%;
+}
+
+
+.footer-distributed .footer-center i{
+	background-color:  #ff914d;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 32px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 28px;
+}
+
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:1;
+}
+
+.footer-distributed .footer-center p a{
+	color:  #06265e;
+	text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+	width: 30%;
+}
+
+.footer-distributed .footer-company-about{
+	line-height: 18px;
+	color:  white;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color: gray;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+
+/* Here is the code for Responsive Footer */
+/* You can remove below code if you don't want Footer to be responsive */
+
+
+@media (max-width: 880px) {
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+
+}
+
+/* elemento de la tabla */
+
+.table {
+
+  text-align: justify;
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 16px;
+  align-items: center;
+  
+     
+  }
+  
+  table th {
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+  }
+  
+  table tr:nth-child {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    
+  }
+
+  .zoom
+{
+ transition: transform .7s;
+}
+.zoom:hover
+{
+ transform: scale(2);
+}
+
+/*boton dentro de la tabla */
+
+
+  button {
+
+    background-color: red;
+    font-size: 10px;
+	  color: #ffffff;
+    border-radius:5px;
+    border: unset;
+    padding-top:5px;
+    padding-bottom:5px;
+    padding-left:7px;
+    padding-right:7px;
+  }
+
+  /*********************** Imagen de quienes somos ***********************/
+
+  #imagen-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#imagen-container>img {
+    max-width: 80%;
+    
+}
+
+/*********************** Imagen de quienes somos ***********************/
+
+
+
+/****************** Formulario de Contactenos*************************/
+
+
+.container__title {
+
+margin:0;
+padding:10px;
+background:#ff914d;
+color:white;
+font-size: 1.9em;
+text-align: center;
+
+
+}
+
+
+.container__input {
+
+width: 320px;
+margin-right: 10px;
+margin-left: 10px;
+font-size: 1em;
+padding: 8px;
+
+}
+
+.container__submit {
+
+  background: #06265e;
+  color:white;
+  border:none;
+  padding:10px;
+  margin:15px auto;
+  width: 100px;
+  font-size: 1em;
+  cursor: pointer;
+
+}
+
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 400px;
+  /* Esquema del formulario */
+  padding: 1em;
+  border: 1px solid #CCC;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 2em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em sans-serif;
+
+  /* Tamaño uniforme del campo de texto */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Destacado adicional para elementos que tienen el cursor */
+  border-color: #000;
+}
+
+textarea {
+  /* Alinear los campos de texto multilínea con sus etiquetas */
+  vertical-align: top;
+
+  /* Proporcionar espacio para escribir texto */
+  height: 5em;
+}
+
+.button {
+  /* Alinear los botones con los campos de texto */
+  padding-left: 10px; /* mismo tamaño que los elementos de la etiqueta */
+}
+
+button {
+  /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+     entre las etiquetas y sus campos de texto */
+  margin-left: .5em;
+}
+
+/****************** FIn Formulario de Contactenos*************************/
+
+/****************** Quienes somos*************************/
+
+.container-all {
+
+  width: 100%;
+  max-width: 1100px;
+  margin-left: 145px;
+  padding: 30px;
+  background: white;
+  align-items: center;
+  
+  
+}
+
+.container-all img {
+
+  width: 450px;
+  float:left;
+  margin-right: 20px;
+  margin-bottom: 40px;
+
+}
+
+.titulo {
+
+  font-size: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin:0;
+
+background:#ff914d;
+color:white;
+font-size: 1.9em;
+text-align: center;
+}
+
+.container-all p {
+
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 'Roboto Condensed';
+  text-align: justify;
+}
+
+/****************** Fin Quienes somos*************************/
+
+/****************** Servicios*************************/
+
+.container-ser1 {
+
+  width: 100%;
+  max-width: 1100px;
+  margin-left: 145px;
+  padding: 30px;
+  background: white;
+  align-items: center;
+  margin-bottom: 40px;
+  height: 350px;
+  
+}
+
+.container-ser1 img {
+
+  width: 480px;
+  float:left;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  
+
+}
+
+.titulo1 {
+
+  font-size: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin:0;
+  background:#ff914d;
+  color:white;
+  font-size: 1.9em;
+  text-align: center;
+
+}
+
+.container-ser1 p {
+
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 'Roboto Condensed';
+  text-align: justify;
+  line-height: 1,4; 
+  
+}
+
+
+.container-ser2 {
+
+  width: 100%;
+  max-width: 1100px;
+  margin-left: 145px;
+  padding: 30px;
+  background: white;
+  align-items: center;
+  margin-bottom: 60px;
+  height: 350px;
+  
+}
+
+.container-ser2 img {
+
+  width: 480px;
+  float:right;
+  margin-left: 20px;
+  margin-bottom: 40px;
+
+
+}
+
+.titulo2 {
+
+  font-size: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin:0;
+  background:#ff914d;
+  color:white;
+  font-size: 1.9em;
+  text-align: center;
+
+}
+
+.container-ser2 p {
+
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 'Roboto Condensed';
+  text-align: justify;
+  line-height: 1,4; 
+  
+}
+
+
+.container-ser3 {
+
+  width: 100%;
+  max-width: 1100px;
+  margin-left: 145px;
+  padding: 30px;
+  background: white;
+  align-items: center;
+  margin-bottom: 40px;
+  height: 350px;
+  
+  
+}
+
+.container-ser3 img {
+
+  width: 480px;
+  float:left;
+  margin-right: 20px;
+  margin-bottom: 40px;
+
+}
+
+.titulo3 {
+
+  font-size: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  margin:0;
+  background:#ff914d;
+  color:white;
+  font-size: 1.9em;
+  text-align: center;
+
+}
+
+.container-ser3 p {
+
+  font-size: 25px;
+  font-weight: 300;
+  font-family: 'Roboto Condensed';
+  text-align: justify;
+  line-height: 1,4; 
+  
+}
+
+
+/*****************************fin servicios ****************************/
+
+/*******************login***********************************/
+
+
+
+/************************fin login*******************************/
